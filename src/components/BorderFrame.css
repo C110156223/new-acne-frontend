@@ -1,0 +1,151 @@
+.matching-game-page {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  height: 400px;
+  width: 680px;
+  gap: 5px;
+  left: 100px;
+  position: relative;
+  flex-direction: row;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 91px;
+  height: 156px;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  border: 2px solid lightblue;
+  transition: background-color 0.3s ease;
+  justify-content: space-evenly;
+}
+
+.card.selected {
+  background-color: lightcoral;
+}
+
+.card.matched {
+  background-color: lightgreen;
+  cursor: default;
+  opacity: 0.7; /* Optional: reduce opacity for a visual cue */
+}
+
+.frame-child2 {
+  width: 894.5px;
+  height: 593.6px;
+  position: relative;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-cornflowerblue);
+  display: none;
+  max-width: 100%;
+}
+.group-textarea {
+  border: 0;
+  background-color: var(--color-gainsboro);
+  height: 450px;
+  width: auto;
+  outline: 0;
+  align-self: stretch;
+  border-radius: var(--br-mini);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-94xl) var(--padding-135xl);
+  box-sizing: border-box;
+  font-family: var(--font-kaisei-tokumin);
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  z-index: 2;
+}
+.back2,
+.div35 {
+  position: absolute;
+}
+.back2 {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 65px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-lightsteelblue);
+  width: 200px;
+  z-index: 2;
+}
+.div35 {
+  top: 14px;
+  left: 0;
+  display: inline-block;
+  width: 330px;
+  z-index: 3;
+}
+.retry-button {
+  height: 80px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+}
+.button-frame1 {
+  width: 341px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xs) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.border-frame2,
+.rectangle-parent2 {
+  border-radius: var(--br-31xl);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.rectangle-parent2 {
+  width: 895px;
+  background-color: var(--color-cornflowerblue);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-47xl) var(--padding-35xl) var(--padding-2xl)
+    var(--padding-36xl);
+  gap: var(--gap-20xl);
+  max-width: 100%;
+}
+.border-frame2 {
+  width: 1012px;
+  margin: 0 !important;
+  position: absolute;
+  top: -284px;
+  right: -862px;
+  background-color: var(--color-darkslateblue);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--padding-16xl);
+  z-index: 1;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-kaisei-tokumin);
+}
+@media screen and (max-width: 1000px) {
+  .div35 {
+    font-size: var(--font-size-7xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .div35 {
+    font-size: var(--font-size-lgi);
+  }
+}
